@@ -1,0 +1,92 @@
+Git Interview Questions and Answers
+1. What is Git?
+Git is a distributed version control system used to track changes in source code, collaborate with developers, and maintain project history.
+2. Why do we use Git?
+To track changes, collaborate with teams, restore previous versions, manage features using branches, and maintain project history.
+3. What is Version Control?
+A system that records changes to files over time.
+4. Difference between Git and GitHub?
+Git is a version control system; GitHub is a cloud platform for hosting Git repositories.
+5. What is a Repository?
+A project folder tracked by Git.
+6. What is the .git folder?
+Stores commits, branches, configuration and Git history.
+7. How do you configure Git?
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+8. Check configuration?
+git config --list
+9. Check Git version?
+git --version
+10. What does git init do?
+Initializes a Git repository.
+11. What does git status show?
+Repository status, current branch, staged, unstaged and untracked files.
+12. What is an untracked file?
+A file not yet tracked by Git.
+13. What is the staging area?
+Temporary area before committing.
+14. git add . vs git add <file>?
+First stages all changes; second stages only one file.
+15. What is a commit?
+A snapshot of your project.
+16. Commit command?
+git commit -m "message"
+17. Why meaningful commit messages?
+They explain what changed and why.
+18. View history?
+git log or git log --oneline
+19. What is a remote repository?
+A repository hosted on GitHub or another server.
+20. Connect local repo?
+git remote add origin <url>
+21. Verify remote?
+git remote -v
+22. Upload code?
+git push origin main
+23. git push vs git push -u?
+-u sets upstream branch.
+24. What is a branch?
+Independent line of development.
+25. Why branches?
+To isolate features and fixes.
+26. List branches?
+git branch
+27. Create branch?
+git branch feature-name
+28. Switch branch?
+git switch feature-name
+29. Create and switch?
+git switch -c feature-name
+30. Multiple branches?
+Yes, one repository can have many branches.
+31. Do branch changes appear automatically?
+No, only after merging.
+32. What is merging?
+Combining changes from one branch into another.
+33. Merge command?
+git merge feature-name
+34. What is a merge conflict?
+Occurs when Git cannot automatically merge changes.
+35. Resolve conflicts?
+Edit, remove markers, test, stage and commit.
+36. What is git pull?
+Fetches and merges changes.
+37. What is git fetch?
+Downloads changes without merging.
+38. Pull vs Fetch?
+Pull = fetch + merge; Fetch = download only.
+39. Daily workflow?
+Pull, branch, code, add, commit, push, PR, merge.
+40. Common commands?
+git status, git add ., git commit, git push, git pull, git branch, git switch, git merge, git log
+41. Wrong branch?
+Move changes to a new branch or stash them.
+42. Forgot to commit?
+Commit or stash before switching if required.
+43. Pushed wrong code?
+Fix with a new commit or use git revert.
+44. Why not work on main?
+To keep the stable branch safe.
+45. Calculator workflow?
+Initialize, commit, push, create feature branches, push, PR, merge.
