@@ -14,9 +14,8 @@ body {
 }
 
 .calculator {
-    /* background: #222; */
+    background: #222;
     /* background-color: darkblue; */
-    background:#666;
     padding: 20px;
     border-radius: 11px;
     width: 320px;
